@@ -1,37 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Colin Richards</title>
+    <title>Colin Richards</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
+
 <body>
-    <nav>
-        <ol>
-            <li id="colin" style="float:left"><a class="active" href="index.html">Colin Richards</a></li>
-            <li style="float:left" id="about"><a href="index.html">About</a></li>
-            <li style="float:left" id="portfolio"><a href="portfolio.html">Portfolio</a></li>
-            <li style="float:left" id="contact"><a href="contact.html">Contact</a></li>
-        </ol>
-    </nav>         
-<div class="container">
-    <h2>Contact</h2>
-        <hr>
-            <form action="action_page.php">
-              <label for="fname">Name</label>
-
-                <input type="text" id="name" name="name" placeholder="Your name..">
-              <label for="email">Email</label>
-
-                <input type="text" name="email" placeholder="Email address..">
-              <label for="message">Message</label>
-              
-                <textarea id="message" name="message" placeholder="Your message.." style="height:200px"></textarea>
-              <input type="submit" value="Submit">
+    <header id="masthead">
+        <div class="container">
+            <a href="index.html" id="logo">Colin Richards</a>
+            <nav>
+                <a href="index.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <div id="main-container" class="container">
+        <section class="main-container">
+            <h1>Contact</h1>
+            <form id="contact-form">
+                <ul>
+                    <li>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="John Smith" required="required">
+                    </li>
+                    <li>
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" placeholder="example@gmail.com" required="required">
+                    </li>
+                    <li>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required="required"></textarea>
+                    </li>
+                </ul>
+                <input type="submit" name="submit">
             </form>
-          </div>
-    <footer>...</footer> 
+        </section>
+        <section class="sidebar">
+            <div id="connect">
+                <h2>Connect with Me</h2>
+                <img src=" " class=" " alt=" ">
+                <img src=" " class=" " alt=" ">
+                <img src=" " class=" " alt=" ">
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div> class"container"> &copy; Copyright 2018 Colin Richards
+        </div>
+    </footer>
+
 </body>
+
 </html>
